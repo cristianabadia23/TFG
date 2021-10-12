@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="PERFIL" android:id="@+id/action_perfil" android:icon="@drawable/cyborg"/>
+    <item android:title="CHAT" android:id="@+id/action_chat" android:icon="@drawable/charla"/>
+    <item android:title="JUEGO" android:id="@+id/action_juego" android:icon="@drawable/tic"/>
+    <item android:title="RANKING" android:id="@+id/action_ranking" android:icon="@drawable/ranking"/>
+    <item android:title="SALIR" android:id="@+id/action_logout" android:icon="@drawable/logout"/>
+
+</menu>

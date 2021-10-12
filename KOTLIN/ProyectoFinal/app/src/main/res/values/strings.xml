@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="intro_bienvenido">Bienvenido a mi proyecto de fin de grado</string>
+    <string name="intro_bienvenido_des">Este proyecto se compone de un modo offline con IA basada en programación funcional y un modo online con Chat</string>
+    <string name="intro_online">ONLINE</string>
+    <string name="intro_online_des">En el modo online podras jugar a las tres en raya, compatir partidas por redes sociales, compartir por codigos QR, Chatear en tiempo real y ver el ranking</string>
+    <string name="intro_offline">MODO OFFLINE</string>
+    <string name="intro_offline_des">En este modo podras medirte con tres IAs diferentes una sencilla, otra mas inteligente que la media y otra IMPOSIBLE DE GANAR</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preference_file_key">puntuaciones</string>
+    <string name="victorias1">victorias1</string>
+    <string name="victorias2">victorias2</string>
+    <string name="victorias3">victorias3</string>
+    <string name="derrotas1">derrotas1</string>
+    <string name="derrotas2">derrotas2</string>
+    <string name="derrotas3">derrotas3</string>
+    <string name="empates1">empates1</string>
+    <string name="empates2">empates2</string>
+    <string name="empates3">empates3</string>
+</resources>

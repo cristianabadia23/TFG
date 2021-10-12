@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frameLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/fondo1"
+tools:context=".ui.online.fragments.GameBlankFragment">
+
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/uanimacion1"
+    android:layout_width="0dp"
+    android:layout_height="169dp"
+    android:layout_alignParentBottom="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.204"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/fighting" />
+
+    <EditText
+        android:id="@+id/textid"
+        android:layout_width="294dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Introduce ID de partida"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
+
+<Button
+    android:id="@+id/bescanear"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/qrcode"
+    android:drawableRight="@drawable/qrcode"
+    android:text="escanear partida"
+    android:textColor="#38E310"
+    app:backgroundTint="#090707"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.751" />
+
+<Button
+    android:id="@+id/boponentealeatorio"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/swords"
+    android:drawableRight="@drawable/swords"
+    android:text="oponente aleatorio"
+    android:textColor="#5FE612"
+    app:backgroundTint="#0E0D0D"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.842" />
+
+<Button
+    android:id="@+id/bcrearPartida"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#500B0B"
+    android:drawableLeft="@drawable/game"
+    android:drawableRight="@drawable/game"
+    android:text="crear partida"
+    android:textColor="#4AD30D"
+    app:backgroundTint="#0E0E0E"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.644" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ibuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

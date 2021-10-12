@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbarchat"
+    android:background="@drawable/fondo1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo1"
+    />
+
+    <ImageView
+        android:id="@+id/salidacirculo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/leftarrow" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usercirculo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/bloque"
+        app:civ_circle_background_color="@color/white" />
+
+    <TextView
+        android:id="@+id/nombreuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/usercirculo"
+        android:maxLines="1"
+        android:text="Nombre de usuario"
+        android:textColor="@color/white"
+
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreuser"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/usercirculo"
+        android:maxLines="1"
+        android:text="ESTADO"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

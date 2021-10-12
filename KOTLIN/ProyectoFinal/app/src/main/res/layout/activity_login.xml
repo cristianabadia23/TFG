@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rcontra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
+    tools:context=".ui.online.LoginActivity">
+
+    <ImageView
+        android:id="@+id/tatras"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="316dp"
+        android:layout_marginRight="316dp"
+        android:layout_marginBottom="594dp"
+        app:srcCompat="@drawable/leftarrow" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="242dp"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginBottom="367dp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="301dp"
+        android:drawableLeft="@drawable/mail"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Introduce E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#EFEFEF"
+        android:textColorHighlight="#E1D9D9"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/pasLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="247dp"
+        android:drawableLeft="@drawable/padlock"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Introduce contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E3E0E0" />
+
+    <Button
+        android:id="@+id/bentrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="192dp"
+        android:text="Entrar"
+        android:textColor="#46ED28"
+        app:backgroundTint="@color/black" />
+
+    <TextView
+        android:id="@+id/tregistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="98dp"
+        android:text="¿No tienes cuenta? registrate"
+        android:textColor="#F6F609" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/bgoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="133dp" />
+
+    <TextView
+        android:id="@+id/reccontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp"
+        android:text="Recuperar Contraseña"
+        android:textColor="#F6F609" />
+</RelativeLayout>

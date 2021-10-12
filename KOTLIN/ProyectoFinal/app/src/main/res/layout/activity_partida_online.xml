@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/fondo2"
+    tools:context=".ui.online.partidaonline.PartidaOnlineActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:id="@+id/linearjugador1"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jugador1Nombre"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="JUGADOR1"
+                    />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/crossbone"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="124dp"
+                    android:layout_height="124dp"
+                    android:src="@drawable/bigdata"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearjugador2"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jugador2Nombre"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="JUGADOR2"
+                    />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fantasma"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:tag="0"
+                    android:onClick="casillaPulsadaOnline"
+                    android:id="@+id/ocasilla0"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:tag="1"
+                    android:onClick="casillaPulsadaOnline"
+                    android:id="@+id/ocasilla1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:tag="2"
+                    android:onClick="casillaPulsadaOnline"
+                    android:id="@+id/ocasilla2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="3"
+                    android:id="@+id/ocasilla3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="4"
+                    android:id="@+id/ocasilla4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="5"
+                    android:id="@+id/ocasilla5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="6"
+                    android:id="@+id/ocasilla6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="7"
+                    android:id="@+id/ocasilla7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:onClick="casillaPulsadaOnline"
+                    android:tag="8"
+                    android:id="@+id/ocasilla8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/casilla" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/babandonoo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="1dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/common_full_open_on_phone"
+            android:text="ABANDONAR" />
+    </LinearLayout>
+</LinearLayout>
